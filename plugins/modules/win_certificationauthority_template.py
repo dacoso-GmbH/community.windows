@@ -66,6 +66,7 @@ options:
     type: str
     aliases:
       - dc
+    required: yes
 '''
 
 EXAMPLES = r'''
@@ -79,6 +80,7 @@ EXAMPLES = r'''
       publishad: yes
       enrollment:  enrollmentGroup
       autoenrollment: myautoenrollmentGroup
+      domaincontroller: dc01
       log_path: "C:\logs\ansible_winca.txt"
 
 - name: Query Certification Authority Templates

@@ -291,7 +291,7 @@ $spec = @{
         autoenrollment   = @{ type = "str" } #Set for a AD Group read and enroll and autoenrollment rights
         log_path         = @{ type = "str" } #Set loggingpath
         publishad        = @{ type = "bool"; default = $false } #Set for a AD Group read and enroll and autoenrollment rights
-        domaincontroller = @{ type = "str"; aliases = @("dc")} #Defines domaincontroller
+        domaincontroller = @{ type = "str"; aliases = @("dc"); $required = $true} #Defines domaincontroller
     }
     supports_check_mode = $true
 }

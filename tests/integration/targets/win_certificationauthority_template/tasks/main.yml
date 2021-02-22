@@ -1,0 +1,11 @@
+---
+ - name: Manage CA Template
+   win_certificationauthority_template:
+     mode: manage
+     originaltemplate: "Webserver"
+     templatename: "myWebserver"
+     newkeylength: 4096
+     validyears: 1
+     publishad: yes
+     domaincontroller: "{{ win_ca_domaincontroller }}"
+
